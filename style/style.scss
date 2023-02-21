@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Noto+Sans:wght@100;300;500;700;800;900&display=swap');
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.header {
+    .navbar--white {
+        box-shadow: none;
+    }
+
+    .container {
+        .site--title {
+            font-family: 'Caveat', cursive;
+        }
+
+        .items {
+            text-transform: capitalize;
+            @media screen and (max-width: 720px) {
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+
+.post {
+    &__author {
+        font-family: 'Caveat', cursive;
+        text-transform: capitalize;
+    }
+
+    &__socials {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+
+        img {
+            height: 50px;
+            width: auto;
+        }
+    }
+}
